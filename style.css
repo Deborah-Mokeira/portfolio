@@ -1,0 +1,132 @@
+/* Define CSS variables at the root level */
+:root {
+  --primary-color: #4951ca;
+  --secondary-color: #cd0a0a;
+  --tertiary-color: #e1f2fb;
+}
+
+/* Set default styles for the body element */
+body {
+  margin: 60px auto;
+  max-width: 700px;
+}
+
+/* Center headings and remove margins */
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+/* Style the main heading */
+h1 {
+  font-size: 3em;
+}
+
+/* Style subheadings */
+h3 {
+  font-size: 24px;
+  opacity: 0.6;
+}
+
+/* Style the homepage link */
+.homepage_link {
+  color: var(--secondary-color);
+  text-align: center;
+  display: block;
+  font-size: 18px;
+}
+
+/* Style the about paragraphs */
+.about-paragraphs {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(16, 13, 24);
+  margin: 10px;
+}
+
+/* Style the container */
+.container {
+  margin: 50px auto;
+}
+
+/* Style the row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style the columns */
+.col-sm-4 {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Style the images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add padding, shadow, and rounded corners to the images */
+.p-2 {
+  padding: 10px;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+/* Use media queries to adjust the style based on the screen size */
+@media only screen and (max-width: 768px) {
+  /* Adjust the column width on smaller screens */
+  .col-sm-4 {
+    flex: 1 0 100%;
+  }
+}
+
+/* Style the contact heading */
+h2 {
+  font-size: 32px;
+}
+
+/* Style the email link */
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 26px;
+  text-decoration: none;
+}
+
+/* Style the email link on hover */
+.email-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+/* Use media queries to adjust the style based on the screen size */
+@media only screen and (max-width: 600px) {
+  /* Adjust the body font size and width on smaller screens */
+  body {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  /* Adjust the margin for the container on smaller screens */
+  .container {
+    margin-top: 30px;
+  }
+}
+
+/* Style the container for the projects section */
+.container {
+  margin-top: 50px;
+}

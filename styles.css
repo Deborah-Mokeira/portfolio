@@ -1,0 +1,154 @@
+/* CSS Variables */
+:root {
+  --primary-color: #503bff;
+  --secondary-color: #090088;
+  --box-shadow: 0 3px 10px rgba(36, 34, 34, 0.3);
+  --tertiary-color: #2d095c;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  background-color: #f6f6f6;
+  font-size: 1.3em;
+
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2a055a;
+  overflow: hidden;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  list-style: none;
+}
+
+
+/* Intro Styling */
+.box {
+  margin: 90px auto;
+  padding:60px 40px;
+  
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+/* Navigation Links Styling */
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 5px;
+  padding: 15px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.contact-link:hover {
+  background: rgba(255, 255, 255, 0.877);
+  box-shadow: var(--box-shadow);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.about-link {
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.about-link:hover {
+  color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+/* Styling Images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mb-3 {
+  margin-bottom: 2rem !important;
+  font-size: 48px;
+  color: var(--tertiary-color);
+}
+
+/* Styling the Paragraph */
+p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+/*styling the buttons*/
+.btn-primary {
+  background-color: #503bff;
+  border: 1px solid #503bff;
+  padding: 15px;
+}
+.btn-primary:hover {
+  background-color: #3d2ec4;
+}
+
+/* Use media queries to adjust the style based on the screen size */
+@media only screen and (max-width: 768px) {
+  body {
+    max-width: 95%;
+  }
+
+  .box {
+    margin: 50px;
+  }
+
+  .navigation-links {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
