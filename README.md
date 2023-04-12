@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 
 Welcome to my portfolio! This repository showcases my work as a software developer. Here, you will find projects I have worked on in the past, as well as my skills and experiences.
