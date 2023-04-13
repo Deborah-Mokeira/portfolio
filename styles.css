@@ -4,7 +4,9 @@ font-family: 'Poppins', sans-serif;*/
 /* CSS Variables */
 :root {
   --branding-color:rgb(27, 128, 230);
+  --primary-color:#ffffff;
   --secondary-color: #F9F7FE;
+  --tertiary-color:#503bff;
   --heading-font-family:'Playfair Display', serif;
   --default-font-family:'Poppins', sans-serif;
 
@@ -15,66 +17,6 @@ font-family: 'Poppins', sans-serif;*/
 body{
   font-family: var(--default-font-family);
 }
-h1,h2,h3,h4,h5,h6{
-  color: black;
-  font-family: var(--heading-font-family);
-  font-weight: bold;
-}
-
-p{
-  font-weight:normal;
-}
-.hero {
-  background: var(--secondary-color);
-  text-align: center;
-  padding:160px 20px;
- 
- }
-.hero p{
-font-size: 36px;
-font-weight: bold;
-margin:0;
-color:#272142;
-}
-h1 {
-  font-size: 96px;
-  
-}
- 
-.hero h2 {
-  font-family:var(--default-font-family);
-  font-size: 24px;
-  font-weight: 200;
-  line-height: 2;
-}
-
-h3 {
-  font-size: 24px;
-  opacity: 0.6;
-}
-/*style buttons*/
-.btn{
-  background-color:var(--branding-color);
-  border:none;
-  color:white;
-  padding: 12px 24px;
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 27px;
-  margin-top: 20px;
- 
-}  
-/*Darker background on mouse-over*/
-.btn:hover{
-  background-color: rgb(61, 144, 228);
-}
-
-
-
-
-
-
-
 /* Navigation Bar Styling */
 .navbar {
   background-color: #f6f6f6;
@@ -95,6 +37,91 @@ h3 {
   padding-left: 0;
   list-style: none;
 }
+h1,h2,h3,h4,h5,h6{
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding:160px 20px;
+ }
+
+.hero p{
+font-size: 2rem;
+font-weight: bold;
+margin:0;
+color:#272142;
+}
+
+h1 {
+  font-size: 96px; 
+  line-height: 1.5;
+}
+
+h2{
+  font-size: 64px;
+}
+ 
+.hero h2 {
+  font-family:var(--default-font-family);
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.6;
+}
+
+p{
+  font-weight:normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+/*style buttons*/
+.btn{
+  background-color:var(--branding-color);
+  border:none;
+  color: var(--primary-color);
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 20px;
+ 
+}  
+/*Darker background on mouse-over*/
+.btn:hover{
+  background-color: rgb(61, 144, 228);
+}
+
+#portfolio{
+  font-size: 48px;
+  margin: 10px;
+  padding: 15px;
+  color: #2a055a;
+
+}
+.project-description{
+  padding: 120px 60px;
+
+}
+
+/*styling the buttons*/
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  border: 1px solid var(--tertiary-color);
+  padding: 15px;
+}
+.btn-primary:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
 
 
 
@@ -109,37 +136,34 @@ h3 {
   flex-wrap: wrap;
 }
 
-
-
-/* Styling the Paragraph */
-p {
-  font-size: 1.1em;
-  line-height: 1.5;
-}
-/*styling the buttons*/
-.btn-primary {
-  background-color: #503bff;
-  border: 1px solid #503bff;
-  padding: 15px;
-}
-.btn-primary:hover {
-  background-color: #3d2ec4;
-}
-
 /* Use media queries to adjust the style based on the screen size */
 @media only screen and (max-width: 768px) {
   body {
     max-width: 95%;
   }
 
-  .box {
+  .hero {
     margin: 50px;
   }
 
-  .navigation-links {
-    font-size: 1rem;
-  }
   p {
     font-size: 1rem;
+  }
+
+  .project-description{
+    padding: 0;
+    text-align: center;
+  }
+
+  h1{
+    font-size: 44px;
+    line-height: 2;
+   
+  }
+  h2{
+    font-size: 44px;
+  }
+  .hero{
+    padding: 80px 20px;
   }
 }
