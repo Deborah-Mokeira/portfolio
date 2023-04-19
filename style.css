@@ -114,6 +114,11 @@ h2 {
   text-decoration: underline;
   color: var(--secondary-color);
 }
+.twitter-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
 
 /* Use media queries to adjust the style based on the screen size */
 @media only screen and (max-width: 600px) {
@@ -121,6 +126,7 @@ h2 {
   body {
     width: 100%;
     font-size: 30px;
+    padding: 10px;
   }
 
   /* Adjust the margin for the container on smaller screens */

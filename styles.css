@@ -16,50 +16,34 @@ body{
   margin: 30px ;
 }
 /* Navigation Bar Styling */
-.navbar {
-  font-size: 1.2em;
-  margin: 20px;
+nav{
+  padding: 20px 0;
+ 
 }
 
-.navbar-brand {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #ff007b;
-}
-
-ul {
-  list-style: none;
+nav ul{
   margin: 0;
   padding: 0;
 }
 
-li a {
-  display: block;
-  float: left;
-  padding: 14px 16px;
-  text-decoration: none;
- color: #fc00a3;
- 
-}
-
-
-
-span {
-  color: #fc00a3;
-  font-size: 22px;
-}
-span:hover {
-  color: black;
-}
-
-.navbar-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding-left: 0;
+nav li{
+  display: inline;
   list-style: none;
+  line-height: 42px;
+  margin-left:15px ;
 }
- 
+nav a{
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.active a{
+  color:var(--tertiary-color) ;
+}
+
+
+ /* Styling the hero */
 h1,h2,h3,h4,h5,h6{
   color: black;
   font-family: var(--heading-font-family);
@@ -105,13 +89,13 @@ p{
   font-size: 16px;
   line-height: 30px;
 }
-/*style buttons*/
+/*style the buttons*/
 .btn{
   background-color:var(--branding-color);
   border:none;
   color: var(--primary-color);
-  padding: 12px 24px;
-  font-size: 18px;
+  padding: 10px 24px;
+  font-size: 16px;
   line-height: 27px;
   margin-top: 20px;
   cursor: pointer;
@@ -164,7 +148,7 @@ p{
   }
 
   .hero {
-    margin: 50px;
+    margin: 30px;
   }
 
   p {
@@ -177,12 +161,13 @@ p{
   }
 
   h1{
-    font-size: 44px;
+    font-size: 40px;
     line-height: 1.5;
    
   }
   h2{
     font-size: 44px;
+  
   }
   .hero{
     padding: 80px 20px;
