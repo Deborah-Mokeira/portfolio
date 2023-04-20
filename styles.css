@@ -15,34 +15,63 @@ body{
   font-family: var(--default-font-family);
   margin: 30px ;
 }
-/* Navigation Bar Styling */
-nav{
-  padding: 20px 0;
- 
+/*Style the navigation*/
+.nav {
+  background-color: #dbf3ff;
+  overflow: hidden;
 }
 
-nav ul{
-  margin: 0;
-  padding: 0;
-}
-
-nav li{
-  display: inline;
-  list-style: none;
-  line-height: 42px;
-  margin-left:15px ;
-}
-nav a{
+/* style the links inside the navigation bar */
+.nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 8px 20px;
   text-decoration: none;
-  color: #272142;
-  transition: all 100ms ease-in-out;
-}
-nav a:hover,
-nav li.active a{
-  color:var(--tertiary-color) ;
+  font-size: 24px;
 }
 
+/* change the color of links on hover */
+.nav a:hover {
+  text-decoration: underline;
+  color: #5a4af0;
+}
 
+/* add active class to the current link */
+.nav a.active {
+ color: rgb(218, 48, 203);
+}
+/*Hide the link that should open and close the nav on small screens*/
+.nav .icon{
+  display: none;
+}
+/*When the screen is less than 600 pixels wide, hide all links, except for the first one("Home").*/
+@media screen and (max-width:600px){
+  .nav a:not(:first-child) {
+    display: none;
+  }
+  .nav a.icon{
+    float:right;
+    display: block;
+  }
+}
+/*The "responsive" class is added when the user clicks on the icon*/
+@media screen and (max-width:600px) {
+  .nav .responsive {
+    position: relative;
+  }
+  .nav .responsive a .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav .responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
  /* Styling the hero */
 h1,h2,h3,h4,h5,h6{
   color: black;
@@ -53,7 +82,8 @@ h1,h2,h3,h4,h5,h6{
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding:160px 20px;
+  padding:100px 20px;
+  
  }
 
 .hero p{
@@ -190,7 +220,7 @@ footer .social-links a:hover{
 
   .hero {
     margin: 30px;
-    padding: 80px 20px;
+    padding: 60px 20px;
   }
 
   p {

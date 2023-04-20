@@ -23,27 +23,16 @@
 </head>
 <body>
   <!--adding navigation-->  
-  <div class="container">
-   <nav class="d-flex justify-content-end">
-    <ul>
-      <li class="active">
-        <a href="/" title="homepage">Home</a>
-      </li>
-      <li>
-        <a href="about.html" title="about Deborah">about</a>
-      </li>
-      <li>
-        <a href="about.html#work" title="Deborah's work ">Work</a>
-      </li>
-      <li>
-        <a href="./index.html#contact" title="contact Deborah">Contact</a>
-      </li>
-     
-    </ul>
-   </nav>
+  <div class="nav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="work.html">Work</a>
+    <a href="index.html#contact">Contact me</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNav('myTopnav')">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
  
-  
   <!--adding intro-->
   <div class="hero">
     <p>👋Hi,I am </p>
